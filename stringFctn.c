@@ -136,7 +136,7 @@ char *_strdup(char *str)
     if (ptr)
     {
         while (len >= 0)
-            *(ptr + len--) = *(str--);
+	*(ptr + len--) = *(str--);
     }
     return (ptr);
 }

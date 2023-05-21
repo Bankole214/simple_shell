@@ -13,6 +13,7 @@
 void free_params(param_t *params)
 {
 	unsigned int i;
+
 	if (params->buffer)
 		free(params->buffer);
 	if (params->nextCommand)

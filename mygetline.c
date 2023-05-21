@@ -24,7 +24,7 @@ char *rlLine(char **line, unsigned int oldSize, unsigned int newSize)
         for (i = 0; i < oldSize; i++)
             newLine[i] = (*line)[i];
         free(*line);
-        *line = newLine;
+	*line = newLine;
     }
     return (newLine);
 }
@@ -36,8 +36,8 @@ char *rlLine(char **line, unsigned int oldSize, unsigned int newSize)
  */
 int _getline(param_t *params)
 {
+	static unsigned int bufSize = BUFFER_SIZE;
     char *line = NULL;
-    static unsigned int bufSize = BUFFER_SIZE;
     char *writeHead = line;
     unsigned int len;
 

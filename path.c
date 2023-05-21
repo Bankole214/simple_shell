@@ -16,6 +16,7 @@ char *get_file(param_t *params)
 	char *path = NULL;
 	char *exePath = NULL, *exeArg = NULL, *tmp = NULL;
 	char *state = NULL;
+
 	if (access(params->args[0], F_OK | X_OK) == 0)
 	{
 		free(path);

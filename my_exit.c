@@ -25,6 +25,7 @@ int validNum(char *s)
 void _myExit(param_t *params)
 {
 	int status = 0;
+
 	if (!params->args[1])
 	{
 		status = params->status;

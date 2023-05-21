@@ -18,6 +18,7 @@ int _printf(const char *format, ...)
 	char *arg = NULL;
 	char buffer[BUFFER_SIZE] = {0};
 	va_list params;
+
 	if (!format)
 		return (-1);
 	/* special case only one % sign */
@@ -110,6 +111,7 @@ int _printf(const char *format, ...)
 int flush_buffer(char *buffer, int *index)
 {
 	int num = 0;
+
 	num = write(1, buffer, *index);
 	*index = BUFFER_SIZE - 1;
 	while (*index >= 0)

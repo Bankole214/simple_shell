@@ -13,6 +13,7 @@ void _setenv(param_t *params)
 	char *tmp = NULL;
 	char *name = params->args[1], *value = params->args[2];
 	list_t *h = params->env_head;
+
 	if (params->tokCount != 3)
 	{
 		params->status = 0;
@@ -49,6 +50,7 @@ void _unsetenv(param_t *params)
 {
 	char *name = params->args[1];
 	list_t *prev = NULL, *h = params->env_head;
+
 	if (params->tokCount != 2)
 	{
 		params->status = 0;

@@ -30,6 +30,7 @@ char *_strtok(char *str, char *delim, char **savePtr)
 {
 	char *ptr, *modifier, *end;
 	int quoteFound = 0;
+
 	if (*savePtr)
 		ptr = *savePtr;
 	else

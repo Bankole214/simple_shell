@@ -58,7 +58,7 @@ list_t *add_node(list_t **head, char *str, char *val)
     new->val = _strdup(val);
     new->valLen = _strlen(val);
     new->next = *head;
-    *head = new;
+	*head = new;
 
     return (new);
 }

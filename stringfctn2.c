@@ -13,7 +13,9 @@
 char *_strcpy(char *dest, const char *src)
 {
 	int i;
+
 	i = 0;
+
 	while (src[i] != '\0')
 	{
 		dest[i] = src[i];
@@ -34,6 +36,7 @@ char *_strcpy(char *dest, const char *src)
 int _strcmp(char *s1, char *s2)
 {
 	int res = 0;
+
 	do {
 		res = *s1 - *s2;
 		if (*s1 == 0 || *s2 == 0)
@@ -55,6 +58,7 @@ int _strcmp(char *s1, char *s2)
 int _strcmp_n(char *s1, char *s2, int n)
 {
 	int i = 0, res = *s1 - *s2;
+
 	while (i <= n)
 	{
 		res = *(s1++) - *(s2++);
@@ -72,6 +76,7 @@ int _strcmp_n(char *s1, char *s2, int n)
 int _atoi(char *s)
 {
 	int n, tmp, len, mul = 1;
+
 	n = 0;
 	tmp = 0;
 	len = _strlen(s);

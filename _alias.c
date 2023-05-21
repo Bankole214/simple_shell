@@ -14,6 +14,7 @@
 void _alias(param_t *params)
 {
 	unsigned int i;
+
 	if (params->tokCount == 1)
 	{
 		/* If called with no args, print all existing aliases. */
@@ -44,6 +45,7 @@ void set_alias(char *name, param_t *params)
 {
 	char *val, *tmp = NULL;
 	unsigned int i = 0, j = 1;
+
 	while (name[i] && name[i] != '=')
 		i++;
 	if (name[i + 1] == '\'')
@@ -88,6 +90,7 @@ void set_alias(char *name, param_t *params)
 void make_alias(char *name, char *val, param_t *params)
 {
 	list_t *h = params->alias_head;
+
 	while (h)
 	{
 		if (!_strcmp(name, h->str))

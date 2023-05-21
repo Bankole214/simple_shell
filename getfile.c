@@ -10,6 +10,7 @@ char *move_left(char *a, int size, int num)
 {
 	int i;
 	char *ptr;
+
 	for (i = 0, ptr = (a + size - num); i < num; i++, ptr++)
 		*(a + i) = *ptr;
 	*(a + num) = '\0';
@@ -24,6 +25,7 @@ char *get_binary(unsigned int n)
 {
 	char *ptr = NULL;
 	unsigned int i, num = 0, size = 0;
+
 	if (n == 0)
 	{
 		ptr = malloc(2);
@@ -64,7 +66,9 @@ char *get_binary(unsigned int n)
 char *get_char(char c)
 {
 	char *ptr = NULL;
+
 	ptr = malloc(2);
+
 	if (ptr == NULL)
 	{
 		return (NULL);
@@ -82,6 +86,7 @@ char *get_string(char *s)
 {
 	char *ptr = NULL;
 	int i, j;
+
 	if (s == NULL)
 	{
 		ptr = malloc(7);

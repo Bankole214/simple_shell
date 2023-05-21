@@ -22,8 +22,8 @@ void rev_string(char *s)
     while (head < tail)
     {
         tmp = *(s + head);
-        *(s + head) = *(s + tail);
-        *(s + tail) = tmp;
+	*(s + head) = *(s + tail);
+		*(s + tail) = tmp;
         head++;
         tail--;
     }
@@ -76,7 +76,7 @@ char *rot13(char *s)
         {
             if (*ptr == c[i])
             {
-                *ptr = r[i];
+		*ptr = r[i];
                 break;
             }
         }

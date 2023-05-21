@@ -110,7 +110,7 @@ param_t *init_param(char **argv, char **env)
     for (i = 0; env[i]; i++)
     {
         eqs = _strchr(env[i], '=');
-        *eqs = '\0';
+	*eqs = '\0';
         params->env_head = add_node(&(params->env_head),
                         env[i], eqs + 1);
         if (!(params->env_head))
