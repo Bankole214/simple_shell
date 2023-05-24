@@ -54,8 +54,8 @@ int process_string(param_t *params)
 		{
 			params->argsCap += 10;
 			params->args = _realloc(params->args,
-						params->argsCap - 10,
-						params->argsCap);
+			params->argsCap - 10,
+			params->argsCap);
 			if (!(params->args))
 			{
 				write(STDERR_FILENO, "realloc error\n", 14);
