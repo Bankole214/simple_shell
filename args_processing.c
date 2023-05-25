@@ -1,4 +1,5 @@
 #include "main.h"
+#include "main.c"
 /**
  * prc_cmnts - checks for comment and removes it from execution
  * @av: arguement vector
