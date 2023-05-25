@@ -1,5 +1,5 @@
 #include "main.h"
-#include "main.c"
+
 /**
  * prc_cmnts - checks for comment and removes it from execution
  * @av: arguement vector
@@ -12,6 +12,7 @@ char **prc_cmnts(char **av)
 
 	if (!av)
 		return (NULL);
+
 	for (i = 0 ; av[i]; i++)
 	{
 		if (_strncmp(av[i], "#", 1) == 0)
