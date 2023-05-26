@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * prc_cmnts - checks for comment and removes it from execution
